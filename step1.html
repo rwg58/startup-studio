@@ -7,31 +7,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/functions.js"></script>
 </head>
 <body>
     <div class="container outer">
         <div class="row">
             <div class="col-sm-3">
                 <div class="skin_type">
-                    <button type="button" class="btn btn-default">Dry</button>
+                    <button type="button" class="btn btn-default unselected" id="dry" onclick="updateSkinType('dry')">Dry</button>
                 </div>
             </div>
             
             <div class="col-sm-3">
                 <div class="skin_type">
-                    <button type="button" class="btn btn-default">Acne</button>
+                    <button type="button" class="btn btn-default unselected" id="acne" onclick="updateSkinType('acne')">Acne</button>
                 </div>
             </div>
             
             <div class="col-sm-3">
                 <div class="skin_type">
-                    <button type="button" class="btn btn-default">Oily</button>
+                    <button type="button" class="btn btn-default unselected" id="oily" onclick="updateSkinType('oily')">Oily</button>
                 </div>
             </div>
             
             <div class="col-sm-3">
                 <div class="skin_type">
-                    <button type="button" class="btn btn-default">Sensitive</button>
+                    <button type="button" class="btn btn-default unselected" id="sensitive" onclick="updateSkinType('sensitive')">Sensitive</button>
                 </div>
             </div>
             
