@@ -15,3 +15,15 @@ function updateSkinType(skinType){
 		document.getElementById('sensitive').setAttribute("class",'unselected');
 	}
 }
+
+function updateAllergStatus(allergyStatus){
+    
+	document.getElementById(allergyStatus).setAttribute("class",'selected');	
+	
+	if (allergyStatus!="allergyYes"){
+		document.getElementById('allergyYes').setAttribute("class",'unselected');
+	}
+	if (allergyStatus!="allergyNo"){
+		document.getElementById('allergyNo').setAttribute("class",'unselected');
+	}
+}

@@ -7,9 +7,8 @@ body{
     background-color: #d6c5fb;
 }
 
-.skin_type{
+.quiz{
     border-radius: 20px;
-/*    position: absolute;*/
     top: 0;
     right: 0;
     bottom: 0;
@@ -19,7 +18,7 @@ body{
     height: 100px;
 }
         
-.skin_type > button{
+.quiz > button{
 /*    background-color: rgba(164, 127, 247, 1);*/
     border: solid rgba(95, 95, 95, 1) 0px;
     cursor: pointer !important;
