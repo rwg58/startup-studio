@@ -27,3 +27,28 @@ function updateAllergStatus(allergyStatus){
 		document.getElementById('allergyNo').setAttribute("class",'unselected');
 	}
 }
+
+
+function updateGoals(goals){
+    
+	document.getElementById(goals).setAttribute("class",'selected');	
+	
+	if (goals!="balancing"){
+		document.getElementById('balancing').setAttribute("class",'unselected');
+	}
+	if (goals!="hydrating"){
+		document.getElementById('hydrating').setAttribute("class",'unselected');
+	}
+	if (goals!="colorCorrecting"){
+		document.getElementById('colorCorrecting').setAttribute("class",'unselected');
+	}
+	if (goals!="oilControl"){
+		document.getElementById('oilControl').setAttribute("class",'unselected');
+	}
+	if (goals!="antiAging"){
+		document.getElementById('antiAging').setAttribute("class",'unselected');
+	}
+	if (goals!="brightening"){
+		document.getElementById('brightening').setAttribute("class",'unselected');
+	}
+}
