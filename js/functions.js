@@ -1,7 +1,8 @@
 function updateSkinType(skinType){
     
 	document.getElementById(skinType).setAttribute("class",'selected');	
-	
+	localStorage.setItem("skintype", skinType);
+    
 	if (skinType!="dry"){
 		document.getElementById('dry').setAttribute("class",'unselected');
 	}
@@ -18,7 +19,8 @@ function updateSkinType(skinType){
 
 function updateAllergStatus(allergyStatus){
     
-	document.getElementById(allergyStatus).setAttribute("class",'selected');	
+	document.getElementById(allergyStatus).setAttribute("class",'selected');
+    localStorage.setItem("allergyStatus", allergyStatus);
 	
 	if (allergyStatus!="allergyYes"){
 		document.getElementById('allergyYes').setAttribute("class",'unselected');
@@ -32,7 +34,8 @@ function updateAllergStatus(allergyStatus){
 function updateGoals(goals){
     
 	document.getElementById(goals).setAttribute("class",'selected');	
-	
+	localStorage.setItem("goals", goals);
+    
 	if (goals!="balancing"){
 		document.getElementById('balancing').setAttribute("class",'unselected');
 	}
