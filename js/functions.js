@@ -1,3 +1,18 @@
+
+
+var concerns = ['Acne', 'Dry', 'Dull', 'Anti-Aging', 'Dark Circles']
+var concernToIngredient = new map();
+map.set(concerns[0], ['Vitamin C', 'Retinol', 'Zinc', 'Salicylic acid', 'Witch hazel', 'Licorice'])
+map.set(concerns[1], ['Vitamin E', 'Niacinamide', 'Glycolic Acid', 'Hyaluronic Acid', 'Tahitian Black Pearl Essence'])
+map.set(concerns[2], ['Olive Extract', 'Resveratrol'])
+
+
+
+
+$(document).ready(function() {
+    console.log( "ready!" );
+});
+
 function updateSkinType(skinType){
     
 	document.getElementById(skinType).setAttribute("class",'selected');	
@@ -28,8 +43,8 @@ function updateAllergStatus(allergyStatus){
 	if (allergyStatus!="allergyNo"){
 		document.getElementById('allergyNo').setAttribute("class",'unselected');
 	}
-}
 
+}
 
 function updateGoals(goals){
     
