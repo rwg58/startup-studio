@@ -1,35 +1,28 @@
+var skinTypes = new Array();
+var allergyStatus = new Array();
 
-
-var concerns = ['Acne', 'Dry', 'Dull', 'Anti-Aging', 'Dark Circles']
-var concernToIngredient = new map();
-map.set(concerns[0], ['Vitamin C', 'Retinol', 'Zinc', 'Salicylic acid', 'Witch hazel', 'Licorice'])
-map.set(concerns[1], ['Vitamin E', 'Niacinamide', 'Glycolic Acid', 'Hyaluronic Acid', 'Tahitian Black Pearl Essence'])
-map.set(concerns[2], ['Olive Extract', 'Resveratrol'])
-
-
-
-
-$(document).ready(function() {
-    console.log( "ready!" );
-});
-
-function updateSkinType(skinType){
+function updateSkinType(skinType){	
     
-	document.getElementById(skinType).setAttribute("class",'selected');	
-	localStorage.setItem("skintype", skinType);
+    $('#'+skinType).toggleClass("selected");
     
-	if (skinType!="dry"){
-		document.getElementById('dry').setAttribute("class",'unselected');
-	}
-	if (skinType!="acne"){
-		document.getElementById('acne').setAttribute("class",'unselected');
-	}
-	if (skinType!="oily"){
-		document.getElementById('oily').setAttribute("class",'unselected');
-	}
-	if (skinType!="sensitive"){
-		document.getElementById('sensitive').setAttribute("class",'unselected');
-	}
+    if($('#'+skinType).hasClass("selected")){
+        
+        skinTypes.push(skinType);
+        localStorage.setItem("skintype", JSON.stringify(skinTypes));
+        
+    }else{
+        
+        var index = skinTypes.indexOf(skinType);
+        
+        if (index > -1) {
+            skinTypes.splice(index, 1);
+        }
+        
+        localStorage.setItem("skintype", JSON.stringify(skinTypes));
+    }
+    
+    var storedNames = JSON.parse(localStorage.getItem("skintype"));
+    console.log(storedNames);
 }
 
 function updateAllergStatus(allergyStatus){
