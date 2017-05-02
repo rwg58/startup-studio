@@ -137,25 +137,17 @@ hr{
     top: 572px;
 }
 
+#left_1_word{
+    position: absolute;
+    left: 325px;
+    top: 577px; 
+}
+
 .left_2 {
     position: absolute;
     left: 276px;
     top: 660px;
 }
-
-/*
-.right_1 {
-    position: absolute;
-    left: 842px;
-    top: 600px;
-}
-
-.right_2 {
-    position: absolute;
-    left: 842px;
-    top: 698px;
-}
-*/
 
 .right_1 {
     position: absolute;
