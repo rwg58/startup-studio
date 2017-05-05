@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="js/functions.js"></script>
+
+    <script type="text/javascript">
+        document.onmousedown = function() {
+            document.body.setAttribute("class", "is-highlighted");
+        }
+        document.onmouseup = function() {
+            document.body.setAttribute("class", "");
+        }
+    </script>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            position: absolute;
+        }
+        body.is-highlighted a {
+            background-color: #e5e5e5;
+            opacity: .2;
+        }
+        main {
+            position: relative;
+            margin: 0 auto;
+        }
+        .top {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+        }
+        .left {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+            left: 0;
+        }
+        .bottom {
+            position: fixed;
+            z-index: 6;
+            bottom: 0;
+        }
+        .right {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+<!-- Quiz show skin type -->
+    <img class="artboardImage" src="img/Quiz show skin type.png" width="1440">
+    <a href="Quiz tell goals.html" style="z-index: 4; left: 628px; top: 1226px; width: 185px; height: 40px"></a>
+
+    <div class="box">
+        <div class="container outer">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="Dry" onclick="updateSkinType('Dry')">Dry</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="Acne" onclick="updateSkinType('Acne')">Acne</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="Oily" onclick="updateSkinType('Oily')">Oily</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="Sensitive" onclick="updateSkinType('Sensitive')">Sensitive</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <img class="skin_face" src="images/normal.jpg">
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+            <br>
+
+            <div class="row allergy_box">
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="Orange" onclick="updateAllergStatus('Orange')">Orange</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="TeaTree" onclick="updateAllergStatus('TeaTree')">Tea Tree</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="Lavender" onclick="updateAllergStatus('Lavender')">Lavender</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="Bergamot" onclick="updateAllergStatus('Bergamot')">Bergamot</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3"></div>
+
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="Rose" onclick="updateAllergStatus('Rose')">Rose</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="None" onclick="updateAllergStatus('None')">None</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3"></div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+</body>
+</html>

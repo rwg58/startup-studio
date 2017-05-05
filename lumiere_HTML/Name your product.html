@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Formula</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="js/functions.js"></script>
+    <script type="text/javascript">
+        document.onmousedown = function() {
+            document.body.setAttribute("class", "is-highlighted");
+        }
+        document.onmouseup = function() {
+            document.body.setAttribute("class", "");
+        }
+    </script> 
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            position: absolute;
+        }
+        body.is-highlighted a {
+            background-color: #e5e5e5;
+            opacity: .2;
+        }
+        main {
+            position: relative;
+            margin: 0 auto;
+        }
+        .top {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+        }
+        .left {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+            left: 0;
+        }
+        .bottom {
+            position: fixed;
+            z-index: 6;
+            bottom: 0;
+        }
+        .right {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+<!-- Name your product -->
+    <img class="artboardImage" src="img/Name your product.png" width="1440">
+    <div class="box">
+        <div class="container outer" style="text-align: center;">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="Floral" onclick="updateScent('Floral')">Floral</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="Woody" onclick="updateScent('Woody')">Woody</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="Citrus" onclick="updateScent('Citrus')">Citrus</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz">
+                        <button type="button" class="btn unselected" id="None" onclick="updateScent('None')">None</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <p>
+                    Note: Some of our ingredients have their own scents which will be make your product scented.
+                    <br>
+                    If your formula includes those agreements, we recommend your pick “None”.
+                </p>
+            </div>
+
+            <br>
+            <br>
+
+            <div style="margin-top: 126px;">
+                <div class="input-group name_box">
+                    <input type="text" class="form-control" placeholder="Name your product" id="diyproduct">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" onclick="displayBottles()">Preview</button>
+                    </span>
+                </div>
+                <br>
+                <p>
+                    We want your product to be as persoanlized and unique as your skin, which is why we gave you the option to name your product. However, if you don’t want to name your product, feel free to leave it blank!
+                </p>
+                <br>
+                <div class="row bottle_box">
+
+                    <div class="col-sm-4">
+                        <div class="bname" id="top">
+                            <p>Ruirui</p>
+                            <img src="images/bottle.png" onclick="selectBottle('top')">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="bname" id="middle">
+                            <p>Ruirui</p>
+                            <img src="images/bottle.png" onclick="selectBottle('middle')">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="bname" id="bottom">
+                            <p>Ruirui</p>
+                            <img src="images/bottle.png" onclick="selectBottle('bottom')">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class = "col-sm-1"></div>
+                <div class="col-sm-5">
+                    <a href="Your%20formula.html" style="margin-left: -148px;">
+                        <img src="images/previousbutton.png">
+                    </a>
+                </div>
+                <div class="col-sm-5">
+                    <a href="Create%20an%20account.html" style="margin-left: -58px;" >
+                        <img src="images/continue.png">
+                    </a>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+
+        </div>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Formula</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="js/functions.js"></script>
+
+    <script type="text/javascript">
+        document.onmousedown = function() {
+            document.body.setAttribute("class", "is-highlighted");
+        }
+        document.onmouseup = function() {
+            document.body.setAttribute("class", "");
+        }
+    </script>
+    <script>
+        $(function(){
+            $(".left_1").animate({left: '330px'}, "slow");
+            $(".left_word_1").animate({left: '376px'}, "slow");
+
+            $(".left_2").animate({left: '326px'}, "slow");
+            $(".left_word_2").animate({left: '386px'}, "slow");
+
+            $(".right_1").animate({right: '318px'}, "slow");
+            $(".right_word_1").animate({right: '384px'}, "slow");
+
+            $(".right_2").animate({right: '322px'}, "slow");
+            $(".right_word_2").animate({right: '374px'}, "slow");
+        });
+
+    </script>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            position: absolute;
+        }
+        body.is-highlighted a {
+            background-color: #e5e5e5;
+            opacity: .2;
+        }
+        main {
+            position: relative;
+            margin: 0 auto;
+        }
+        .top {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+        }
+        .left {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+            left: 0;
+        }
+        .bottom {
+            position: fixed;
+            z-index: 6;
+            bottom: 0;
+        }
+        .right {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+            right: 0;
+        }
+    </style> 
+</head>
+
+<body>
+<main>
+<!-- Your formula -->
+    <img class="artboardImage" src="img/Your formula.png" width="1440">
+    <a href="Name your product.html" style="z-index: 4; left: 794px; top: 1160px; width: 185px; height: 40px"></a>
+    <a href="Quiz tell goals.html" style="z-index: 4; left: 461px; top: 1160px; width: 185px; height: 40px"></a>
+
+    <div class="box">
+        <img src="images/left_1.png" class="left_1">
+        <p class="left_word_1"></p>
+
+        <img src="images/left_2.png" class="left_2">
+        <p class="left_word_2"></p>
+
+        <img src="images/right_1.png" class="right_1">
+        <p class="right_word_1"></p>
+
+        <img src="images/right_2.png" class="right_2">
+        <p class="right_word_2"></p>
+    </div>
+
+    <script>
+        window.onload = showIngredients();
+    </script>
+</main>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="js/functions.js"></script>
+
+    <script type="text/javascript">
+        document.onmousedown = function() {
+            document.body.setAttribute("class", "is-highlighted");
+        }
+        document.onmouseup = function() {
+            document.body.setAttribute("class", "");
+        }
+    </script>
+
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            position: absolute;
+        }
+        body.is-highlighted a {
+            background-color: #e5e5e5;
+            opacity: .2;
+        }
+        main {
+            position: relative;
+            margin: 0 auto;
+        }
+        .top {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+        }
+        .left {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+            left: 0;
+        }
+        .bottom {
+            position: fixed;
+            z-index: 6;
+            bottom: 0;
+        }
+        .right {
+            position: fixed;
+            z-index: 6;
+            top: 0;
+            right: 0;
+        }
+    </style> 
+</head>
+<body>
+<main>
+<!-- Quiz tell goals -->
+    <img class="artboardImage" src="img/Quiz tell goals.png" width="1440">
+    <a href="Quiz show skin type.html" style="z-index: 4; left: 419px; top: 647px; width: 185px; height: 40px"></a>
+    <a href="Your formula.html" style="z-index: 4; left: 840px; top: 647px; width: 185px; height: 40px"></a>
+
+    <div class="box">
+        <div class="container outer">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="quiz_2">
+                        <button type="button" class="btn unselected" id="balancing" onclick="updateGoals('balancing')">Balancing (Acne)</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz_2">
+                        <button type="button" class="btn unselected" id="hydrating" onclick="updateGoals('hydrating')">Hydrating</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz_2">
+                        <button type="button" class="btn unselected" id="color_correcting" onclick="updateGoals('color_correcting')">Color Correcting</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz_2">
+                        <button type="button" class="btn unselected" id="oil_control" onclick="updateGoals('oil_control')">Oil Control</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3"></div>
+
+                <div class="col-sm-3">
+                    <div class="quiz_2">
+                        <button type="button" class="btn unselected" id="anti_aging" onclick="updateGoals('anti_aging')">Anti-Aging</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="quiz_2">
+                        <button type="button" class="btn unselected" id="brightening" onclick="updateGoals('brightening')">Brightening</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3"></div>
+
+            </div>
+
+
+            <div class="row desc_box">
+                <div class="col-sm-12" style="text-align: center;">
+                    <h4>Description:</h4>
+                    <p class="goals_desc"></p>
+                    <br>
+                    <h4>Ingredients you need:</h4>
+                    <p class="ingredients_needed"></p>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div>
+                <div class = "col-sm-1"></div>
+                <div class="col-sm-5">
+                    <a href="Quiz%20show%20skin%20type.html">
+                        <img src="images/previousbutton.png">
+                    </a>
+                </div>
+                <div class="col-sm-5">
+                    <a href="Your%20formula.html" style="margin-left: 55px;">
+                        <img src="images/continue.png">
+                    </a>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
