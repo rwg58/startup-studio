@@ -96,7 +96,7 @@ function updateGoals(goal){
             $(".goals_desc").text("This ingredients targets hyperpigmentation and inflammation. Skin brightening can help with acne scars, " +
 				"age spots, or sun spots");
 
-            $(".ingredients_needed").text("Lavender, Lemon, and grkFrankincense");
+            $(".ingredients_needed").text("Lavender, Lemon, and grk Frankincense");
         }
 
     }else{
