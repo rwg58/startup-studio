@@ -131,9 +131,9 @@ function showIngredients() {
     var goals_list = ['balancing', 'hydrating', 'oil_control', 'brightening', 'color_correcting', 'anti_aging'];
 
     var ingredient = new Map();
-    ingredient.set(0,['  Tea tree 25% ', '  Lavender 25%  ']);
+    ingredient.set(0,['  Geranium 25% ', '  Lavender 25%  ']);
     ingredient.set(1,[' Sandalwood 25% ', '   Myrrh 25%   ']);
-    ingredient.set(2,['   Orange 25%  ', '  Bergamot 25%  ']);
+    ingredient.set(2,['   Cypress 25%  ', '  Bergamot 25%  ']);
     ingredient.set(3,['   Lemon 25%   ', '  Bergamot 25%  ']);
     ingredient.set(4,['   Lemon 25%   ', 'Frankincense 25%']);
     ingredient.set(5,[' Tangerine 25% ', 'Frankincense 25%']);
